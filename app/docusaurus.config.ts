@@ -8,15 +8,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://redot-landing.pages.dev/',// FIXME: make sure this is changed on repo handover.
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'digimbyte', // FIXME: make sure this is changed on repo handover.
+  projectName: 'redoc', // FIXME: make sure this is changed on repo handover.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,8 +63,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.jpg',
     navbar: {
       title: 'Redot Wiki',
       logo: {
@@ -132,6 +131,7 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
+      additionalLanguages: ['csharp','gdscript', 'rescript'],
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
